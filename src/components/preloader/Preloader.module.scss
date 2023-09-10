@@ -1,0 +1,24 @@
+.preloader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ffffff;
+  gap: 30px;
+  .spinner {
+    animation: spin 2s linear infinite;
+
+    img{
+      width: 50px;
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
